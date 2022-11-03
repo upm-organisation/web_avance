@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.android{
+    position: relative;
+    width: 400px;
+    height: 500px;
+}
+
+.organs{
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: #367D5E;
+    cursor: pointer;
+}
+
+.head{
+    left: 50%;
+    height: 100px;
+    width: 200px;
+    border-radius: 150px 150px 0 0;
+}
+
+.head:hover{
+    transform:translateX(-50%) scaleX(1.2);
+}
+
+.head:hover .eye{
+    transform: translateX(-100%);
+}
+
+.body{
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 0 0 40px 40px;
+    top: 110px;
+}
+
+.arm{
+    top: 110px;
+    width: 40px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.arm.right:hover{
+    rotate: -20deg;
+}
+
+.arm.left:hover{
+    rotate: 20deg;
+}
+
+.arm.left{
+    left: 70px;
+}
+
+.arm.right{
+    right: 30px;
+}
+
+.foot{
+    top: 280px;
+    width: 40px;
+    height: 170px;
+    border-radius: 20px;
+}
+
+.foot.right{
+    left: 160px;
+}
+
+.foot.left{
+    right: 120px;
+}
+
+.foot.right:hover{
+    rotate: 20deg;
+}
+
+.foot.left:hover{
+    rotate: -20deg;
+}
+
+.eye{
+    position: absolute;
+    background-color: white;
+    width: 32px;
+    height: 18px;
+    border-radius: 50%;
+    top: 65px;
+    transform: translateX(-50%);
+}
+
+.eye.left{
+    left: 65px;
+}
+
+.eye.right{
+    right: 30px;
+}

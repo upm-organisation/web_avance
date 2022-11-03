@@ -1,27 +1,147 @@
-img{
-    width: 250px;
-    height:250px;
-    border-radius: 20px;
-    margin-left: 150px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+body{
+    position: relative;
+    background-image: url("pattern.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 header{
-    background-color: black;
-    position: fixed;
+    height: 35vh;
+    background: black;
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
-h1{
+
+header.sticky{
+    position: fixed;
+    top: 0;
+}
+
+header h1{
     color: white;
     text-align: center;
-    font-size: large;
+    font-size: 3em;
+    font-family: sans-serif;
+    text-shadow: 4px 4px 0 #7F7F7F;
 }
-.menu{
-    background-color: aqua;
-    border-radius: 20px;
-    display: block;
-    width: fit-content;
-    margin-right: 20px;
-}
-.menu-container{
+
+header div{
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img{
+    height: 180px;
+    border-radius: 30px;
+    box-shadow: 8px 7px 0 white;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 0 20px;
+    transition: all .01s ease;
+}
+
+header.sticky + .container {
+    margin-top: 50vh;
+}
+
+.container main{
+    flex-basis: 80%;
+}
+
+main section{
+    margin-bottom: 40px;
+}
+
+main section h2{
+    margin-bottom: 20px;   
+}
+
+main section p{
+    line-break: anywhere;
+    line-height: 2;
+    font: 1em sans-serif;
+}
+
+.container aside{
+    position: fixed;
+    top: 60%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 20px 100px 20px 30px;
+    background-color: #ACD7E5;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: -3px 3px 0 black;
+}
+
+aside li{
+    margin-bottom: 8px;
+}
+
+aside a{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+section#contacter form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px ;
+}
+
+section#contacter label{
+   font-size: 18px;
+   color: black;
+   margin: 10px 0;
+}
+
+section#contacter form input:not(:last-child){
+    border-style: inset;
+    border-radius: 30px;
+}
+
+#text{
+    border-style: inset;
+    border-radius: 10px;
+}
+
+section#contacter form input#submit{
+   width: fit-content;
+   margin: 15px 0;
+   border-radius: 3px;
+   padding: 3px 6px;
+   border: 1px solid;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 15px 0;
 }
