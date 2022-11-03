@@ -1,0 +1,27 @@
+img{
+    width: 250px;
+    height:250px;
+    border-radius: 20px;
+    margin-left: 150px;
+}
+header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    display: block;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: large;
+}
+.menu{
+    background-color: aqua;
+    border-radius: 20px;
+    display: block;
+    width: fit-content;
+    margin-right: 20px;
+}
+.menu-container{
+    width: 100%;
+}

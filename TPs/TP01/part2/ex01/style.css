@@ -1,0 +1,33 @@
+#Yellow{
+    background-color: yellow;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 50px;
+    border: solid 1px black;
+}
+#Green{
+    background-color: green;
+    width: 250px;
+    height: 250px;
+    border: solid 1px black;
+}
+#Blue{
+    background-color: blue;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 50px;
+    border: solid 1px black;
+}
+#Red{
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    border: solid 1px black;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+}
+.line_1{
+    margin-bottom: 30px;
+}
